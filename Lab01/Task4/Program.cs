@@ -4,11 +4,16 @@ class Conditionals
 {
     static void Main()
     {
+        Console.WriteLine("1. Max.");
+        Console.WriteLine("2. Product.");
+        Console.WriteLine("3. Day of week.");
+        Console.WriteLine("4. Exit.");   
         int choice = int.Parse(Console.ReadLine());
         switch (choice)
         {
             case 1:
             {   
+                Console.WriteLine("Choose three numbers:");
                 int a = int.Parse(Console.ReadLine());
                 int b = int.Parse(Console.ReadLine());
                 int c = int.Parse(Console.ReadLine());
@@ -30,6 +35,7 @@ class Conditionals
             }
             case 2:
             {  
+                Console.WriteLine("Choose three numbers:"); 
                 int a = int.Parse(Console.ReadLine());
                 int b = int.Parse(Console.ReadLine());
                 int c = int.Parse(Console.ReadLine());
@@ -62,6 +68,7 @@ class Conditionals
             }
             case 3:
             {
+                Console.WriteLine("Choose number of day");
                 int n = int.Parse(Console.ReadLine());
                 switch (n)
                 {
@@ -91,7 +98,16 @@ class Conditionals
                         break;
                 }
                 break;
-            }    
+            }
+            case 4:
+            {
+                break;
+            }
+            default:
+            {
+                Console.WriteLine("Invalid choice.");
+                break;
+            }   
         }   
     }
 }
