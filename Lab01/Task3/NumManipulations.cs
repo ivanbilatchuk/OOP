@@ -46,6 +46,21 @@ class NumManipulations
                     Console.WriteLine(nDigit);
                 }
                 break;
+            }
+            case 5:
+            {
+                int n = int.Parse(Console.ReadLine());
+                bool result;
+                if (n % 2 == 1 && n > 20)
+                {
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                }    
+                Console.WriteLine(result);
+                break;
             }    
         }
     }
