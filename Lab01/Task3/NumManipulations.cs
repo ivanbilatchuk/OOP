@@ -9,9 +9,9 @@ class NumManipulations
         {
             case 1:
             {
-                float a = int.Parse(Console.ReadLine());
-                float b = int.Parse(Console.ReadLine());
-                float c = int.Parse(Console.ReadLine());
+                int a = int.Parse(Console.ReadLine());
+                int b = int.Parse(Console.ReadLine());
+                int c = int.Parse(Console.ReadLine());
                 float average = (a + b + c) / 3;
                 Console.WriteLine("Average is " + average);
                 break;
