@@ -61,6 +61,22 @@ class NumManipulations
                 }    
                 Console.WriteLine(result);
                 break;
+            }
+            case 6:
+            {
+                int n = int.Parse(Console.ReadLine());
+                bool result;
+                if (n % 9 || n % 11 || n % 13)
+                {
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                }    
+                Console.WriteLine(result);
+                break;
+                
             }    
         }
     }
