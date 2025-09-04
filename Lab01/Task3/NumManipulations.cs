@@ -4,6 +4,13 @@ class NumManipulations
 {
     static void Main()
     {
+        Console.WriteLine("1. Average.");
+        Console.WriteLine("2. Area.");
+        Console.WriteLine("3. Last digit.");
+        Console.WriteLine("4. N digit.");
+        Console.WriteLine("5. Check odd and bigger than 20.");
+        Console.WriteLine("6. Check division by 9, 11, 13.");
+        Console.WriteLine("7. Exit.");
         int choice = int.Parse(Console.ReadLine());
         switch (choice)
         {
@@ -66,7 +73,7 @@ class NumManipulations
             {
                 int n = int.Parse(Console.ReadLine());
                 bool result;
-                if (n % 9 || n % 11 || n % 13)
+                if (n % 9 == 0 || n % 11 == 0 || n % 13 == 0)
                 {
                     result = true;
                 }
@@ -76,8 +83,12 @@ class NumManipulations
                 }    
                 Console.WriteLine(result);
                 break;
-                
-            }    
+            }
+            default:
+            {
+                Console.WriteLine("Invalid choice.");   
+                break;
+            }   
         }
     }
 }
