@@ -49,7 +49,7 @@ class NumManipulations
                 }
                 else
                 {
-                    int nDigit = number / (int)(Math.Pow(10, n - 1)) % 10;
+                    int nDigit = (number / (int)(Math.Pow(10, n - 1))) % 10;
                     Console.WriteLine(nDigit);
                 }
                 break;
