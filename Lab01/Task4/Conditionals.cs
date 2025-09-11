@@ -26,7 +26,7 @@ class Conditionals
                 {
                     max = b;
                 }
-                else
+                else if (c > a && c > b)
                 {
                     max = c;   
                 }
