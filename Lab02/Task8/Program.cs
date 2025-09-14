@@ -15,7 +15,7 @@ class Program
 
             if (arr[i] < minVal || arr[i] > maxVal)
             {
-                Console.WriteLine("Invalid number (it can be only from 0 to 65535).");
+                Console.WriteLine($"Invalid number (it can be only from {minVal} to {maxVal}).");
                 return;   
             }    
         }
