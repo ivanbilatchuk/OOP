@@ -4,12 +4,12 @@ class Program
 {
     static void Main()
     {
-        string[] parts = Console.ReadLine().Split(' ');
-        int n = parts.Length;
+        string[] input = Console.ReadLine().Split(' ');
+        int n = input.Length;
         int[] arr = new int[n];
         for (int i = 0; i < n; i++)
         {
-            arr[i] = int.Parse(parts[i]);
+            arr[i] = int.Parse(input[i]);
         }
         int k = int.Parse(Console.ReadLine());
         int[] sum = new int[n];
