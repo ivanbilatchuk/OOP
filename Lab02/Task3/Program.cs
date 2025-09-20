@@ -9,7 +9,6 @@ class Program
         if (n % 4 != 0)
         {
             Console.WriteLine("Invalid length.");
-            return;  
         }
         else
         {

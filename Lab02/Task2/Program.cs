@@ -25,10 +25,6 @@ class Program
         for (int i = 0; i < n; i++)
         {
             Console.Write(sum[i] + " ");
-            if (i < n - 1)
-            {
-                Console.Write(" ");   
-            } 
         }    
     }
 }    
