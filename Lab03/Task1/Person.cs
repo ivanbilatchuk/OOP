@@ -31,8 +31,8 @@ public class Person
     
     public Person(string name, int age)
     {
-        this.name = name;
-        this.age = age;   
+        Name = name;
+        Age = age;   
     }
 
     public Person() : this("No name", 1)
