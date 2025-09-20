@@ -28,19 +28,21 @@ public class Person
             age = value;
         }
     }
-
-    public Person()
-    {
-        name = "John";
-        age = 18;
-    }
-
+    
     public Person(string name, int age)
     {
         this.name = name;
         this.age = age;   
     }
 
+    public Person() : this("No name", 1)
+    {
+    }
+
+    public Person(int age) : this("No name", age)
+    {
+    }
+    
     public void Print()
     {
         Console.WriteLine($"Name: {name}, Age: {age}");   
