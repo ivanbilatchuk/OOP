@@ -25,7 +25,14 @@ public class Person
         }
         set
         {
-            age = value;
+            if (value < 0)
+            {
+                age = 0;
+            }
+            else
+            {
+                age = value;
+            }
         }
     }
     
