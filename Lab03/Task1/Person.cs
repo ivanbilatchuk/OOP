@@ -35,12 +35,16 @@ public class Person
         Age = age;   
     }
 
-    public Person() : this("No name", 1)
+    public Person() 
     {
+        Name = "No name";
+        Age = -1;  
     }
 
-    public Person(int age) : this("No name", age)
+    public Person(int age)
     {
+        Name = "No name";
+        Age = age; 
     }
     
     public void Print()
