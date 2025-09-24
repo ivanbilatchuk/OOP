@@ -1,0 +1,15 @@
+C:\Education\CHNU\2\OOP\Lab04\Task2\bin\Debug\net9.0\Task2.exe
+C:\Education\CHNU\2\OOP\Lab04\Task2\bin\Debug\net9.0\Task2.deps.json
+C:\Education\CHNU\2\OOP\Lab04\Task2\bin\Debug\net9.0\Task2.runtimeconfig.json
+C:\Education\CHNU\2\OOP\Lab04\Task2\bin\Debug\net9.0\Task2.dll
+C:\Education\CHNU\2\OOP\Lab04\Task2\bin\Debug\net9.0\Task2.pdb
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\Task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\Task2.AssemblyInfoInputs.cache
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\Task2.AssemblyInfo.cs
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\Task2.csproj.CoreCompileInputs.cache
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\Task2.sourcelink.json
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\Task2.dll
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\refint\Task2.dll
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\Task2.pdb
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\Task2.genruntimeconfig.cache
+C:\Education\CHNU\2\OOP\Lab04\Task2\obj\Debug\net9.0\ref\Task2.dll
