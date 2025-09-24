@@ -14,7 +14,6 @@ public class Hospital
         if (department.PatientsCount < department.Patients.Length)
         {
             department.Patients[department.PatientsCount++] = new Patient() { Name = patientName.Trim() };
-            
         }
         else
         {
