@@ -9,11 +9,11 @@ public class Hospital
 
     public void AddPatient(string departmentName, string doctorName, string patientName)
     {
-        Department department = FindOrAddDepartment(departmentName.Trim());
-        Doctor doctor = FindOrAddDoctor(doctorName.Trim());
+        Department department = FindOrAddDepartment(departmentName);
+        Doctor doctor = FindOrAddDoctor(doctorName);
         if (department.PatientsCount < department.Patients.Length)
         {
-            department.Patients[department.PatientsCount++] = new Patient() { Name = patientName.Trim() };
+            department.Patients[department.PatientsCount++] = new Patient() { Name = patientName };
         }
         else
         {
@@ -21,7 +21,7 @@ public class Hospital
         }
         if (doctor.PatientsCount < doctor.Patients.Length)
         {
-            doctor.Patients[doctor.PatientsCount++] = new Patient() { Name = patientName.Trim() };
+            doctor.Patients[doctor.PatientsCount++] = new Patient() { Name = patientName };
         }
     }
     
