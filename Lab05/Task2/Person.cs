@@ -5,12 +5,14 @@ public class Person
     private string name;
     private decimal money;
     private Product[] bag;
+    private int count;
 
     public Person(string name, decimal money)
     {
         Name = name;
         Money = money;
-        bag = new Product[0];
+        bag = new Product[20];
+        count = 0;
     }
 
     public string Name
@@ -49,15 +51,17 @@ public class Person
     {
         if (Money >= product.Price)
         {
-            Money -= product.Price;
-            Product[] newBag = new Product[bag.Length + 1];
-            for (int i = 0; i < bag.Length; i++)
+            if (count >= bag.Length)
             {
-                newBag[i] = bag[i];
-            }    
-            newBag[bag.Length - 1] = product;
-            bag = newBag;
-            Console.WriteLine($"{Name} bought {product.Name}.");
+                Console.WriteLine($"{Name} cannot buy more products (bag is full).");
+            }
+            else
+            {
+                bag[count] = product;
+                Money -= product.Price;
+                count++;
+                Console.WriteLine($"{Name} bought {product.Name}.");
+            }   
         }
         else
         {
@@ -67,15 +71,15 @@ public class Person
 
     public void Print()
     {
-        if (bag.Length == 0)
+        if (count == 0)
         {
             Console.WriteLine($"{Name} - Nothing bought");
         }    
         Console.WriteLine($"{Name} - ");
-        for (int i = 0; i < bag.Length; i++)
+        for (int i = 0; i < count; i++)
         {
             Console.Write(bag[i].Name);
-            if (i < bag.Length - 1)
+            if (i < count - 1)
             {
                 Console.Write(", "); 
             }    
