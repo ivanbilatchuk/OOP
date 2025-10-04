@@ -74,16 +74,20 @@ public class Person
         if (count == 0)
         {
             Console.WriteLine($"{Name} - Nothing bought");
-        }    
-        Console.WriteLine($"{Name} - ");
-        for (int i = 0; i < count; i++)
+        }
+        else
         {
-            Console.Write(bag[i].Name);
-            if (i < count - 1)
+            Console.Write($"{Name} - ");
+            for (int i = 0; i < count; i++)
             {
-                Console.Write(", "); 
-            }    
-        }    
-        Console.WriteLine();
+                Console.Write(bag[i].Name);
+                if (i < count - 1)
+                {
+                    Console.Write(", ");
+                }
+            }
+
+            Console.WriteLine();
+        }
     }
 }

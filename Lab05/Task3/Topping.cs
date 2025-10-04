@@ -48,7 +48,7 @@ public class Topping
     {
         return 2 * weight * TypeModifier();   
     }
-    public double TypeModifier()
+    private double TypeModifier()
     {
         string t = type.ToLower();
         if (t == "meat")

@@ -21,7 +21,7 @@ namespace Task2
 
         static Person[] ReadPeople()
         {
-            string[] input = Console.ReadLine().Split(';', StringSplitOptions.RemoveEmptyEntries);
+            string[] input = Console.ReadLine().Split(';');
             Person[] people = new Person[input.Length];
             for (int i = 0; i < input.Length; i++)
             {
@@ -35,7 +35,7 @@ namespace Task2
 
         static Product[] ReadProducts()
         {
-            string[] input = Console.ReadLine().Split(';', StringSplitOptions.RemoveEmptyEntries);
+            string[] input = Console.ReadLine().Split(';');
             Product[] products = new Product[input.Length];
             for (int i = 0; i < input.Length; i++)
             {
@@ -88,11 +88,11 @@ namespace Task2
                     break;
                 }
 
-                string[] parts = command.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-                string PersonName = parts[0];
-                string ProductName = parts[1];
-                Person person = FindPerson(people, PersonName);
-                Product product = FindProduct(products, ProductName);
+                string[] parts = command.Split(' ');
+                string personName = parts[0];
+                string productName = parts[1];
+                Person person = FindPerson(people, personName);
+                Product product = FindProduct(products, productName);
                 if (person != null && product != null)
                 {
                     person.BuyProduct(product);

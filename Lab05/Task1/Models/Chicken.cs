@@ -12,8 +12,8 @@ namespace AnimalFarm.Models
 
         public Chicken(string name, int age)
         {
-            this.Name = name;
-            this.Age = age;
+            Name = name;
+            Age = age;
         }
 
         public string Name
