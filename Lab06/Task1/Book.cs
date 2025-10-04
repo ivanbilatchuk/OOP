@@ -24,7 +24,7 @@ public class Book
         set
         {
             string[] parts = value.Split(' ');
-            if (parts.Length > 1 && char.IsUpper(parts[1][0]))
+            if (parts.Length > 1 && char.IsDigit(parts[1][0]))
             {
                 throw new ArgumentException("Author name is invalid.");
             }    
