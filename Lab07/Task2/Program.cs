@@ -72,12 +72,9 @@ class Program
         string year = Console.ReadLine();
         for (int i = 0; i < count; i++)
         {
-            if (birthables[i] != null)
-            {
-                if (birthables[i].Birthday.EndsWith(year))
-                {
-                    Console.WriteLine(birthables[i].Birthday);
-                }
+            if (birthables[i].Birthday.EndsWith(year)) 
+            { 
+                Console.WriteLine(birthables[i].Birthday); 
             }
         }   
     }
