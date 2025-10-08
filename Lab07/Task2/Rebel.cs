@@ -1,6 +1,6 @@
 namespace Task2;
 
-public class Rebel
+public class Rebel : IBuyer
 {
     public string Name { get; }
     public int Age { get; }
