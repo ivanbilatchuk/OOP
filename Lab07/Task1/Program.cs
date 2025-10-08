@@ -1,3 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+using Task1;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main()
+    {
+        string[] phoneNumbers = Console.ReadLine().Split(' ');
+        string[] urls = Console.ReadLine().Split(' ');
+        Smartphone smartphone = new Smartphone();
+        foreach (string number in phoneNumbers)
+        {
+            Console.WriteLine(smartphone.Call(number));
+        }
+        foreach (string url in urls)
+        {
+            Console.WriteLine(smartphone.Browse(url));
+        }
+    }
+}
