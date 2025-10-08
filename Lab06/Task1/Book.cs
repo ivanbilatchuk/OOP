@@ -12,7 +12,7 @@ public class Book
     {
         this.Author = author;
         this.Title = title;
-        this.price = price;
+        this.Price = price;
     }
 
     public string Author

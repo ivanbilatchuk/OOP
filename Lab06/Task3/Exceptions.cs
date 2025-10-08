@@ -2,7 +2,8 @@ namespace Task3;
 
 public class InvalidSongException : Exception
 {
-    public InvalidSongException(string message = "Invalid song.") : base(message)
+    public InvalidSongException(string message = "Invalid song.") 
+        : base(message)
     {
     }
 }

@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices.JavaScript;
 using System.Text;
 
 namespace Task2;
@@ -24,7 +23,7 @@ public class Human
         {
             if (!char.IsUpper(value[0]))
             {
-                throw new ArgumentException("Excepted upper case letter! Argument: firstName");
+                throw new ArgumentException("Expected upper case letter! Argument: firstName");
             }
 
             if (value.Length < 4)
@@ -45,7 +44,7 @@ public class Human
         {
             if (!char.IsUpper(value[0]))
             {
-                throw new ArgumentException("Excepted upper case letter! Argument: lastName");
+                throw new ArgumentException("Expected upper case letter! Argument: lastName");
             }
             if (value.Length < 3)
             {
