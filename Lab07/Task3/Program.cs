@@ -38,7 +38,9 @@ class Program
 
                 IPrivate[] realSubs = new IPrivate[subCount];
                 for (int i = 0; i < subCount; i++)
+                {
                     realSubs[i] = subs[i];
+                }
 
                 var lg = new LeutenantGeneral(parts[1], parts[2], parts[3], double.Parse(parts[4]), realSubs);
                 Console.WriteLine(lg);

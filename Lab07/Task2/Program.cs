@@ -94,7 +94,7 @@ class Program
                 int age = int.Parse(parts[1]);
                 string id = parts[2];
                 string birth = parts[3];
-                buyers[count] = new Citizen(name, age, id, birth);
+                buyers[count] = new Citizen(name, age, birth, id);
                 names[count] = name;
                 count++;
             }    
