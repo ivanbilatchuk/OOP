@@ -16,7 +16,7 @@ class Program
                 Birthdays();
                 break;
             case 3:
-                FoodShortage();
+                Food();
                 break;
             default:
                 Console.WriteLine("Invalid chapter.");
@@ -79,7 +79,7 @@ class Program
         }   
     }
 
-    static void FoodShortage()
+    static void Food()
     {
         int n = int.Parse(Console.ReadLine());
         string[] names = new string[n];
