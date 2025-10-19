@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Education\\CHNU\\2\\OOP\\Lab09\\Task1\\Task1.csproj",
-      "projectName": "Task1",
-      "projectPath": "C:\\Education\\CHNU\\2\\OOP\\Lab09\\Task1\\Task1.csproj",
+      "projectUniqueName": "C:\\Education\\CHNU\\2\\OOP\\Lab09\\Task1-3\\Task1-3.csproj",
+      "projectName": "Task1-3",
+      "projectPath": "C:\\Education\\CHNU\\2\\OOP\\Lab09\\Task1-3\\Task1-3.csproj",
       "packagesPath": "C:\\Users\\Incognitus\\.nuget\\packages\\",
-      "outputPath": "C:\\Education\\CHNU\\2\\OOP\\Lab09\\Task1\\obj\\",
+      "outputPath": "C:\\Education\\CHNU\\2\\OOP\\Lab09\\Task1-3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Incognitus\\AppData\\Roaming\\NuGet\\NuGet.Config"
