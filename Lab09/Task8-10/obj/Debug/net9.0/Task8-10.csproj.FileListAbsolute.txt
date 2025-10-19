@@ -1,0 +1,15 @@
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\bin\Debug\net9.0\Task8-10.exe
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\bin\Debug\net9.0\Task8-10.deps.json
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\bin\Debug\net9.0\Task8-10.runtimeconfig.json
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\bin\Debug\net9.0\Task8-10.dll
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\bin\Debug\net9.0\Task8-10.pdb
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\Task8-10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\Task8-10.AssemblyInfoInputs.cache
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\Task8-10.AssemblyInfo.cs
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\Task8-10.csproj.CoreCompileInputs.cache
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\Task8-10.sourcelink.json
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\Task8-10.dll
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\refint\Task8-10.dll
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\Task8-10.pdb
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\Task8-10.genruntimeconfig.cache
+C:\Education\CHNU\2\OOP\Lab09\Task8-10\obj\Debug\net9.0\ref\Task8-10.dll
