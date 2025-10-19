@@ -56,7 +56,7 @@ class Program
         }
     }
 
-    private static Food CreateFood(string[] info)
+    static Food CreateFood(string[] info)
     {
         string type = info[0];
         int quantity = int.Parse(info[1]);

@@ -5,7 +5,6 @@ class Car : Vehicle
     public Car(double fuelQuantity, double fuelConsumption) : base(fuelQuantity, fuelConsumption + 0.9)
     {
     }
-
     public override void Drive(double distance)
     {
         double neededFuel = distance * fuelConsumption;

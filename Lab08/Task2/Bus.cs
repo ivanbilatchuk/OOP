@@ -11,7 +11,7 @@ public class Bus : Vehicle
     {
         fuelConsumption += 1.4;
         base.Drive(distance);
-        fuelConsumption -= -1.4;
+        fuelConsumption -= 1.4;
     }
 
     public override void DriveEmpty(double distance)
