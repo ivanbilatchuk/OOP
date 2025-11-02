@@ -12,27 +12,62 @@ class Program
         InitializeKingAndArmy();
         ProcessCommands();
     }
+    static bool IsAlpha(string str)
+    {
+        foreach (char c in str)
+        {
+            if (!char.IsLetter(c))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 
     static void InitializeKingAndArmy()
     {
-        king = new King(Console.ReadLine());
+        string kingName = Console.ReadLine();
+        if (IsAlpha(kingName))
+        {
+            king = new King(kingName);
+        }
+        else
+        {
+            Console.WriteLine("Invalid king name!");
+            return;
+        }
 
         string[] royalNames = Console.ReadLine().Split(' ');
         for (int i = 0; i < royalNames.Length; i++)
         {
-            RoyalGuard rg = new RoyalGuard(royalNames[i]);
-            royalGuards.Add(rg);
-            king.KingAttacked += rg.Respond;
+            if (IsAlpha(royalNames[i]))
+            {
+                RoyalGuard rg = new RoyalGuard(royalNames[i]);
+                royalGuards.Add(rg);
+                king.KingAttacked += rg.Respond;
+            }
+            else
+            {
+                Console.WriteLine($"Invalid name: '{royalNames[i]}'");
+            }
         }
 
         string[] footmanNames = Console.ReadLine().Split(' ');
         for (int i = 0; i < footmanNames.Length; i++)
         {
-            Footman fm = new Footman(footmanNames[i]);
-            footmen.Add(fm);
-            king.KingAttacked += fm.Respond;
+            if (IsAlpha(footmanNames[i]))
+            {
+                Footman fm = new Footman(footmanNames[i]);
+                footmen.Add(fm);
+                king.KingAttacked += fm.Respond;
+            }
+            else
+            {
+                Console.WriteLine($"Invalid name: '{footmanNames[i]}'");
+            }
         }
     }
+
 
     static void ProcessCommands()
     {
