@@ -39,12 +39,22 @@ class Program
     static void DamageSoldier(string name)
     {
         foreach (var rg in royalGuards)
-            if (rg.Name == name && rg.IsAlive)
-            { rg.TakeDamage(); return; }
+        {   if (rg.Name == name && rg.IsAlive)
+            {
+
+                rg.TakeDamage();
+                return;
+            }
+        }
 
         foreach (var fm in footmen)
+        {
             if (fm.Name == name && fm.IsAlive)
-            { fm.TakeDamage(); return; }
+            {
+                fm.TakeDamage();
+                return;
+            }
+        }
     }
 
     static void SoldierDied(object sender, EventArgs e)

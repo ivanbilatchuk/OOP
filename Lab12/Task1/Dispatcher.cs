@@ -5,7 +5,6 @@ public delegate void NameChangeEventHandler(object sender, NameChangeEventArgs a
 public class NameChangeEventArgs : EventArgs
 {
     public string Name { get; private set; }
-
     public NameChangeEventArgs(string name)
     {
         this.Name = name;
@@ -43,7 +42,7 @@ public class Dispatcher
 
     public event NameChangeEventHandler NameChange;
 
-    protected virtual void OnNameChange(NameChangeEventArgs args)
+    protected void OnNameChange(NameChangeEventArgs args)
     {
         if (this.NameChange != null)
         {

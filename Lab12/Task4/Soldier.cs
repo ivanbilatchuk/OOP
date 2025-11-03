@@ -4,7 +4,10 @@ public abstract class Soldier
 {
     public string Name { get; }
     public int Health { get; protected set; }
-    public bool IsAlive => Health > 0;
+    public bool IsAlive 
+    {
+        get { return Health > 0; }
+    }
 
     public event EventHandler Died;
 
