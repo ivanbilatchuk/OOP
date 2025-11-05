@@ -17,13 +17,16 @@ public class Person : IComparable<Person>
 
     public int CompareTo(Person other)
     {
-        if (other == null) return 1;
+        if (other == null) 
+            return 1;
 
         int result = this.Name.CompareTo(other.Name);
-        if (result != 0) return result;
+        if (result != 0) 
+            return result;
 
         result = this.Age.CompareTo(other.Age);
-        if (result != 0) return result;
+        if (result != 0) 
+            return result;
 
         return this.Town.CompareTo(other.Town);
     }

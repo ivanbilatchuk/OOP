@@ -9,7 +9,7 @@ class Program
         string input;
         while ((input = Console.ReadLine()) != "END")
         {
-            string[] parts = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            string[] parts = input.Split(' ');
             string name = parts[0];
             int age = int.Parse(parts[1]);
             string town = parts[2];

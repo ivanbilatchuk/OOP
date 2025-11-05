@@ -11,7 +11,7 @@ class Program
         string input;
         while ((input = Console.ReadLine()) != "END")
         {
-            string[] parts = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            string[] parts = input.Split(' ');
             string command = parts[0];
 
             try

@@ -4,7 +4,7 @@ namespace Task2;
 
 public class ListyIterator<T> : IEnumerable<T>
 {
-    private readonly List<T> items;
+    private List<T> items;
     private int index;
 
     public ListyIterator(List<T> collection)
