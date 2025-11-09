@@ -35,7 +35,7 @@ class Program
                     FacultyNumber = st.FacultyNumber,
                     Specialty = sp.SpecialtyName
                 })
-            .OrderBy(r => r.Name) 
+            .OrderByDescending(r => r.Name) 
             .ThenBy(r => r.FacultyNumber);
         
         foreach (var r in result)

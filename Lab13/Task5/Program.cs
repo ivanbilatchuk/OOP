@@ -17,8 +17,7 @@ class Program
             students.Add(new Student(firstName, lastName, email));
         }
 
-        var result = students
-            .Where(s => s.Email.EndsWith("@gmail.com"));
+        var result = students.Where(s => s.Email.EndsWith("@gmail.com"));
 
         foreach (var student in result)
         {

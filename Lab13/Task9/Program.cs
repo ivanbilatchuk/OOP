@@ -16,11 +16,9 @@ class Program
             students.Add(new Student(facultyNumber, grades));
         }
         
-        var result = students
-            .Where(s => s.FacultyNumber.Length >= 6 &&
-                        (s.FacultyNumber.Substring(4, 2) == "14" ||
-                         s.FacultyNumber.Substring(4, 2) == "15"))
-            .Select(s => s.Grades);
+        var result = students.Where(s => s.FacultyNumber.Length >= 6 && 
+                                         (s.FacultyNumber.Substring(4, 2) == "14" || 
+                                          s.FacultyNumber.Substring(4, 2) == "15")).Select(s => s.Grades);
         
         foreach (var grades in result)
         {

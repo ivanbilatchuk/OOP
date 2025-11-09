@@ -16,9 +16,7 @@ class Program
             people.Add(new Person(name, group));
         }
         
-        var grouped = people
-            .GroupBy(p => p.Group)
-            .OrderBy(g => g.Key);
+        var grouped = people.GroupBy(p => p.Group).OrderBy(g => g.Key);
         foreach (var group in grouped)
         {
             string students = string.Join(", ", group.Select(p => p.Name));

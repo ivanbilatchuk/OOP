@@ -17,8 +17,7 @@ class Program
             students.Add(new Student(firstName, lastName, grades));
         }
 
-        var excellentStudents = students
-            .Where(s => s.Grades.Contains(6));
+        var excellentStudents = students.Where(s => s.Grades.Contains(6));
 
         foreach (var student in excellentStudents)
         {

@@ -17,8 +17,7 @@ class Program
             students.Add(new Student(firstName, lastName, phone));
         }
 
-        var result = students
-            .Where(s => s.Phone.StartsWith("02") || s.Phone.StartsWith("+3592"));
+        var result = students.Where(s => s.Phone.StartsWith("02") || s.Phone.StartsWith("+3592"));
 
         foreach (var student in result)
         {

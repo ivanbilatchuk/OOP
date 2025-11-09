@@ -17,8 +17,7 @@ class Program
             students.Add(new Student(firstName, lastName, grades));
         }
         
-        var weakStudents = students
-            .Where(s => s.Grades.Count(g => g <= 3) >= 2);
+        var weakStudents = students.Where(s => s.Grades.Count(g => g == 6) == 3);
         
         foreach (var student in weakStudents)
         {

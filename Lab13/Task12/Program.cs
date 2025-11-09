@@ -15,10 +15,7 @@ class Program
 
         for (int i = 0; i < n; i++)
         {
-            string input = Console.ReadLine()
-                .Trim('|')
-                .Replace(" ", "");
-
+            string input = Console.ReadLine().Trim('|').Replace(" ", "");
             string[] parts = input.Split('-');
             string company = parts[0];
             int amount = int.Parse(parts[1]);
@@ -36,22 +33,16 @@ class Program
 
     static void PrintSummary(List<CompanyOrder> orders)
     {
-        var companies = orders
-            .GroupBy(x => x.Company)
-            .OrderBy(x => x.Key); 
+        var companies = orders.GroupBy(x => x.Company).OrderBy(x => x.Key); 
 
         foreach (var companyGroup in companies)
         {
-            var products = companyGroup
-                .GroupBy(x => x.Product)
-                .Select(g => new
+            var products = companyGroup.GroupBy(x => x.Product).Select(g => new
                 {
                     Product = g.Key,
                     Total = g.Sum(x => x.Amount),
                     FirstIndex = companyGroup.ToList().FindIndex(x => x.Product == g.Key)
-                })
-                .OrderBy(x => x.FirstIndex) 
-                .ToList();
+                }).OrderBy(x => x.FirstIndex).ToList();
 
             Console.Write(companyGroup.Key + ": ");
 
