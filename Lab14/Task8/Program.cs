@@ -4,8 +4,7 @@ class Program
 {
     static void Main()
     {
-        int[] numbers = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
-
+        int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
         Comparison<int> customComparator = (a, b) =>
         {
             if (a % 2 == 0 && b % 2 != 0)

@@ -1,0 +1,15 @@
+C:\Education\CHNU\2\OOP\Lab14\Task12\bin\Debug\net9.0\Task12.exe
+C:\Education\CHNU\2\OOP\Lab14\Task12\bin\Debug\net9.0\Task12.deps.json
+C:\Education\CHNU\2\OOP\Lab14\Task12\bin\Debug\net9.0\Task12.runtimeconfig.json
+C:\Education\CHNU\2\OOP\Lab14\Task12\bin\Debug\net9.0\Task12.dll
+C:\Education\CHNU\2\OOP\Lab14\Task12\bin\Debug\net9.0\Task12.pdb
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\Task12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\Task12.AssemblyInfoInputs.cache
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\Task12.AssemblyInfo.cs
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\Task12.csproj.CoreCompileInputs.cache
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\Task12.sourcelink.json
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\Task12.dll
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\refint\Task12.dll
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\Task12.pdb
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\Task12.genruntimeconfig.cache
+C:\Education\CHNU\2\OOP\Lab14\Task12\obj\Debug\net9.0\ref\Task12.dll

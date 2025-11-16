@@ -6,7 +6,7 @@ class Program
 {
     static void Main()
     {
-        int[] range = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
+        int[] range = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
         int start = range[0];
         int end = range[1];
         string command = Console.ReadLine();
