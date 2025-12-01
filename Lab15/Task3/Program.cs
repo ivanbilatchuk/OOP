@@ -49,7 +49,7 @@ class Program
         string[] expected = File.ReadAllLines(expectedPath);
 
         bool match = expected.SequenceEqual(output);
-        Console.WriteLine(match ? "Results match expectedResult.txt" : "Results do NOT match expectedResult.txt");
+        Console.WriteLine(match ? "Results match expectedResult.txt" : "Results do not match expectedResult.txt");
     }
 
 }

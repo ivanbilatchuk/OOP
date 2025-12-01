@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UserSecretsId>23cdca7b-ebf4-46f9-8f5d-b299cc3d1411</UserSecretsId>
+        <RootNamespace>Task1</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+</Project>
