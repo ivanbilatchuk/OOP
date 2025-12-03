@@ -25,23 +25,27 @@ public class SalesContext : DbContext
     {
         modelBuilder.Entity<Product>(entity =>
         {
+            entity.HasKey(p => p.ProductId);
             entity.Property(p => p.Name).HasMaxLength(50).IsUnicode(true);
             entity.Property(p => p.Description).HasMaxLength(250).HasDefaultValue("No description");
         });
 
         modelBuilder.Entity<Customer>(entity =>
         {
+            entity.HasKey(c => c.CustomerId);
             entity.Property(c => c.Name).HasMaxLength(100).IsUnicode(true);
             entity.Property(c => c.Email).HasMaxLength(80).IsUnicode(false);
         });
 
         modelBuilder.Entity<Store>(entity =>
         {
+            entity.HasKey(s => s.StoreId);
             entity.Property(s => s.Name).HasMaxLength(80).IsUnicode(true);
         });
 
         modelBuilder.Entity<Sale>(entity =>
         {
+            entity.HasKey(s => s.SaleId);
             entity.Property(s => s.Date).HasDefaultValueSql("GETDATE()");
         });
     }

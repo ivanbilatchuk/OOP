@@ -32,6 +32,7 @@ public class HospitalContext : DbContext
     {
         modelBuilder.Entity<Patient>(entity =>
         {
+            entity.HasKey(e => e.PatientId);
             entity.Property(e => e.FirstName).HasMaxLength(50).IsUnicode(true);
             entity.Property(e => e.LastName).HasMaxLength(50).IsUnicode(true);
             entity.Property(e => e.Address).HasMaxLength(250).IsUnicode(true);
@@ -39,12 +40,19 @@ public class HospitalContext : DbContext
         });
         modelBuilder.Entity<Diagnose>(entity =>
         {
+            entity.HasKey(e => e.DiagnoseId);
             entity.Property(e => e.Name).HasMaxLength(50).IsUnicode(true);
             entity.Property(e => e.Comments).HasMaxLength(250).IsUnicode(true);
+        });
+        modelBuilder.Entity<Visitation>(entity =>
+        {
+            entity.HasKey(e => e.VisitationId);
+            entity.Property(e => e.Comments).HasMaxLength(250).IsUnicode(true);    
         });
 
         modelBuilder.Entity<Medicament>(entity =>
         {
+            entity.HasKey(e => e.MedicamentId);
             entity.Property(e => e.Name).HasMaxLength(50).IsUnicode(true);
         });
 
@@ -53,6 +61,7 @@ public class HospitalContext : DbContext
 
         modelBuilder.Entity<Doctor>(entity =>
         {
+            entity.HasKey(e => e.DoctorId);
             entity.Property(e => e.Name).HasMaxLength(100).IsUnicode(true);
             entity.Property(e => e.Specialty).HasMaxLength(100).IsUnicode(true);
         });

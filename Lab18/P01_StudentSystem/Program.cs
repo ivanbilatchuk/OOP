@@ -97,7 +97,7 @@ class Program
         });
         context.Homeworks.Add(new Homework
         {
-            Content = "maria_essay.pdf", ContentType = ContentType.Pdf, SubmissionTime = DateTime.Now.AddDays(1),
+            Content = "ma_essay.pdf", ContentType = ContentType.Pdf, SubmissionTime = DateTime.Now.AddDays(1),
             StudentId = s2.StudentId, CourseId = c1.CourseId
         });
 

@@ -22,7 +22,7 @@ namespace Task1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Task1-2.Data.Models.Diagnose", b =>
+            modelBuilder.Entity("Task1.Data.Models.Diagnose", b =>
                 {
                     b.Property<int>("DiagnoseId")
                         .ValueGeneratedOnAdd()
@@ -52,7 +52,7 @@ namespace Task1.Migrations
                     b.ToTable("Diagnoses");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Doctor", b =>
+            modelBuilder.Entity("Task1.Data.Models.Doctor", b =>
                 {
                     b.Property<int>("DoctorId")
                         .ValueGeneratedOnAdd()
@@ -85,7 +85,7 @@ namespace Task1.Migrations
                     b.ToTable("Doctors");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Medicament", b =>
+            modelBuilder.Entity("Task1.Data.Models.Medicament", b =>
                 {
                     b.Property<int>("MedicamentId")
                         .ValueGeneratedOnAdd()
@@ -104,7 +104,7 @@ namespace Task1.Migrations
                     b.ToTable("Medicaments");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Patient", b =>
+            modelBuilder.Entity("Task1.Data.Models.Patient", b =>
                 {
                     b.Property<int>("PatientId")
                         .ValueGeneratedOnAdd()
@@ -144,7 +144,7 @@ namespace Task1.Migrations
                     b.ToTable("Patients");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.PatientMedicament", b =>
+            modelBuilder.Entity("Task1.Data.Models.PatientMedicament", b =>
                 {
                     b.Property<int>("PatientId")
                         .HasColumnType("int");
@@ -159,7 +159,7 @@ namespace Task1.Migrations
                     b.ToTable("PatientMedicaments");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Visitation", b =>
+            modelBuilder.Entity("Task1.Data.Models.Visitation", b =>
                 {
                     b.Property<int>("VisitationId")
                         .ValueGeneratedOnAdd()
@@ -169,7 +169,9 @@ namespace Task1.Migrations
 
                     b.Property<string>("Comments")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(250)
+                        .IsUnicode(true)
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
@@ -189,9 +191,9 @@ namespace Task1.Migrations
                     b.ToTable("Visitations");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Diagnose", b =>
+            modelBuilder.Entity("Task1.Data.Models.Diagnose", b =>
                 {
-                    b.HasOne("Task1-2.Data.Models.Patient", "Patient")
+                    b.HasOne("Task1.Data.Models.Patient", "Patient")
                         .WithMany("Diagnoses")
                         .HasForeignKey("PatientId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -200,15 +202,15 @@ namespace Task1.Migrations
                     b.Navigation("Patient");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.PatientMedicament", b =>
+            modelBuilder.Entity("Task1.Data.Models.PatientMedicament", b =>
                 {
-                    b.HasOne("Task1-2.Data.Models.Medicament", "Medicament")
+                    b.HasOne("Task1.Data.Models.Medicament", "Medicament")
                         .WithMany("Prescriptions")
                         .HasForeignKey("MedicamentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Task1-2.Data.Models.Patient", "Patient")
+                    b.HasOne("Task1.Data.Models.Patient", "Patient")
                         .WithMany("Prescriptions")
                         .HasForeignKey("PatientId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -219,15 +221,15 @@ namespace Task1.Migrations
                     b.Navigation("Patient");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Visitation", b =>
+            modelBuilder.Entity("Task1.Data.Models.Visitation", b =>
                 {
-                    b.HasOne("Task1-2.Data.Models.Doctor", "Doctor")
+                    b.HasOne("Task1.Data.Models.Doctor", "Doctor")
                         .WithMany("Visitations")
                         .HasForeignKey("DoctorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Task1-2.Data.Models.Patient", "Patient")
+                    b.HasOne("Task1.Data.Models.Patient", "Patient")
                         .WithMany("Visitations")
                         .HasForeignKey("PatientId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -238,17 +240,17 @@ namespace Task1.Migrations
                     b.Navigation("Patient");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Doctor", b =>
+            modelBuilder.Entity("Task1.Data.Models.Doctor", b =>
                 {
                     b.Navigation("Visitations");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Medicament", b =>
+            modelBuilder.Entity("Task1.Data.Models.Medicament", b =>
                 {
                     b.Navigation("Prescriptions");
                 });
 
-            modelBuilder.Entity("Task1-2.Data.Models.Patient", b =>
+            modelBuilder.Entity("Task1.Data.Models.Patient", b =>
                 {
                     b.Navigation("Diagnoses");
 
